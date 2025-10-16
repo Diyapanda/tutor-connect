@@ -16,7 +16,7 @@ dotenv.config();
 app.use(express.json({ limit: '10mb' }))
 // CORS configuration
 app.use(cors({
-    origin: "https://project-tution.netlify.app/*", // allow your Netlify frontend
+    origin: "https://project-tution.netlify.app", // allow your Netlify frontend
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true
